@@ -1,26 +1,21 @@
-public class Cliente{
+public class Cliente extends Pessoa{
     
-    private String nomeCliente;
-    private int processo;
+    private Processo processo;
     
-    public Cliente (){
-    	this.nomeCliente = "";
-    	this.processo = 0;
+    public Cliente() {
+        super();
     }
     
-    public void setNomeCliente(String nomeCliente){
-        this.nomeCliente = nomeCliente;
+    public Cliente(String nome, int idade, Processo processo) {
+        super(nome, idade);
+        this.processo = processo;
     }
     
-    public String getNomeCliente(){
-        return nomeCliente;
+    public void setProcesso(Processo processo) {
+        this.processo = processo;
     }
     
-    public void setNumeroProcesso(int numeroProcesso){
-        this.processo = numeroProcesso;
-    }
-    
-    public int getNumeroProcesso(){
-    	return this.processo;
+    public Processo getProcesso() {
+        return this.processo;
     }
 }
