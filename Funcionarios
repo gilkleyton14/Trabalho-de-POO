@@ -1,0 +1,9 @@
+import javax.swing.JOptionPane;
+public class NomeFuncionarios {
+
+	public static void main(String[] args) {
+		System.out.println("Cadastrar Funcionarios:");
+		String funcionarios= JOptionPane.showInputDialog("Qual o nome do Funcionario?");
+	
+}
+	}
